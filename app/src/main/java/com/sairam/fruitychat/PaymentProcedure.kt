@@ -49,17 +49,133 @@ class PaymentActivity : ComponentActivity() {
                 end = Offset(Float.POSITIVE_INFINITY, 0f)
             )
 
-           //1
+            Surface(
+                modifier = Modifier
+                    .background(gradient45)
+                    .fillMaxSize()
+                    .padding(28.dp)
+            ) {
+
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(gradient45),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Image(
+                        modifier = Modifier.size(250.dp),
+                        painter = painterResource(id = R.drawable.pay),
+                        contentDescription = null
+                    )
+                    Spacer(modifier = Modifier.height(50.dp))
+
+                    HeadingTextComponent(value = "Payment Details")
+                    Spacer(modifier = Modifier.height(15.dp))
+
+                    MyForm()
+
+                    Spacer(modifier = Modifier.height(20.dp))
+
+                    Button(
+                        modifier = Modifier
+                            .wrapContentWidth()
+                            .heightIn(48.dp),
+                        onClick = {
+                            context.startActivity(Intent(context, OrderFinalizationTask::class.java))
+                        },
+                        contentPadding = PaddingValues(),
+                        colors = ButtonDefaults.buttonColors(Color.Transparent),
+                        shape = RoundedCornerShape(50.dp),
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(48.dp)
+                                .background(
+                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
+                                    shape = RoundedCornerShape(20.dp)
+                                ),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = "Proceed",
+                                fontSize = 18.sp,
+                                color = Color.Black,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(10.dp))
+                }
+            }
         }
     }
 }
 
-//2
+@Composable
+fun MyTextFieldComponent(
+    labelValue: String,
+    onTextChanged: (String) -> Unit
+) {
+    var text by remember { mutableStateOf("") }
+
+    TextField(
+        value = text,
+        onValueChange = { newText ->
+            text = newText
+            onTextChanged(newText)
+        },
+        label = { Text(labelValue) },
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(Color.White, shape = RoundedCornerShape(8.dp))
+            .padding(8.dp),
+        colors = TextFieldDefaults.textFieldColors(
+            focusedIndicatorColor = Color.Blue,
+            unfocusedIndicatorColor = Color.Gray,
+            focusedLabelColor = Color.Blue,
+            unfocusedLabelColor = Color.Gray,
+            cursorColor = Color.Blue,
+            textColor = Color.Black
+        ),
+        shape = RoundedCornerShape(8.dp),
+        textStyle = TextStyle(
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Normal,
+            color = Color.Black
+        ),
+        placeholder = { Text("Enter $labelValue") }
+    )
+}
 
 @Composable
 fun MyForm() {
     Column {
-       //3
+        MyTextFieldComponent(
+            labelValue = "Cardholder’s name",
+            onTextChanged = { /* handle text change */ }
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        MyTextFieldComponent(
+            labelValue = "Credit/Debit card number",
+            onTextChanged = { /* handle text change */ }
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        MyTextFieldComponent(
+            labelValue = "Sort Code",
+            onTextChanged = { /* handle text change */ }
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        MyTextFieldComponent(
+            labelValue = "3 digits CVV Number",
+            onTextChanged = { /* handle text change */ }
+        )
     }
 }
 
@@ -70,3 +186,18 @@ fun DefaultPreviewOfSignUpScreen() {
         PaymentActivity().onCreate(null) // Preview content
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
