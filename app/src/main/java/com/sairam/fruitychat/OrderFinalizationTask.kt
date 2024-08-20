@@ -91,24 +91,23 @@ class OrderFinalizationTask : ComponentActivity() {
                         colors = ButtonDefaults.buttonColors(Color.Transparent),
                         shape = RoundedCornerShape(50.dp),
                     ) {
-//                        Box(
-//                            modifier = Modifier
-//                                .fillMaxWidth()
-//                                .heightIn(48.dp)
-//                                .background(
-//                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
-//                                    shape = RoundedCornerShape(20.dp)
-//                                ),
-//                            contentAlignment = Alignment.Center
-//                        ) {
-//                            Text(
-//                                text = "Browse continue....",
-//                                fontSize = 18.sp,
-//                                color = Color.Black,
-//                                fontWeight = FontWeight.Bold
-//                            )
-//
-//                        }
+                       Box(
+                           modifier = Modifier
+                               .fillMaxWidth()
+                               .heightIn(48.dp)
+                               .background(
+                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
+                                    shape = RoundedCornerShape(20.dp)
+                                ),
+                            contentAlignment = Alignment.Center
+                       ) {
+                           Text(
+                               text = "Browse continue....",
+                                fontSize = 18.sp,
+                                color = Color.Black,
+                                fontWeight = FontWeight.Bold
+                           )
+                       }
 
                     }
                 }
