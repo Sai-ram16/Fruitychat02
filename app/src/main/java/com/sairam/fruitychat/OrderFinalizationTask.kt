@@ -39,7 +39,116 @@ import com.sairam.fruitychat.ui.concept.Primary
 
 
 class OrderFinalizationTask : ComponentActivity() {
+    @SuppressLint("SuspiciousIndentation")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+
+            val context = LocalContext.current
+            val gradient45 = Brush.linearGradient(
+                colors = listOf(Color(0xFFFFA500), Color(0xFFFFA500)),
+                start = Offset(0f, Float.POSITIVE_INFINITY),
+                end = Offset(Float.POSITIVE_INFINITY, 0f)
+            )
+
+            Surface(
+                modifier = Modifier
+                    .background(gradient45)
+                    .fillMaxSize()
+                    .padding(28.dp)
+
+                    .background(Color(0xFFFFA500))
+                    .padding(28.dp)
+                //.align(Alignment.Center)
+            ) {
 
 
+                Column(modifier = Modifier
+                    .fillMaxSize()
+                    .background(gradient45),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally) {
+                    HeadingTextComponent(value = "Order Placed Successfully")
+                    Spacer(modifier = Modifier.height(50.dp))
+                    Image(
+                        painter = painterResource(id = R.drawable.os),
+                        contentDescription = null,
+                        modifier = Modifier
+                            .width(100.dp)  // Set the width here
+                            .height(400.dp) // Set the height here
+                    )
+                    Spacer(modifier = Modifier.height(10.dp))
+                    val fruits = ""
+                    Button(
+                        modifier = Modifier
+                            .wrapContentWidth()
+                            .heightIn(48.dp),
+                        onClick = {
+                            context.startActivity(Intent(context, MainOperation::class.java)
+                                .putExtra("fruit", fruits))
+                        },
+                        contentPadding = PaddingValues(),
+                        colors = ButtonDefaults.buttonColors(Color.Transparent),
+                        shape = RoundedCornerShape(50.dp),
+                    ) {
+//                        Box(
+//                            modifier = Modifier
+//                                .fillMaxWidth()
+//                                .heightIn(48.dp)
+//                                .background(
+//                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
+//                                    shape = RoundedCornerShape(20.dp)
+//                                ),
+//                            contentAlignment = Alignment.Center
+//                        ) {
+//                            Text(
+//                                text = "Browse continue....",
+//                                fontSize = 18.sp,
+//                                color = Color.Black,
+//                                fontWeight = FontWeight.Bold
+//                            )
+//
+//                        }
+
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
