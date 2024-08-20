@@ -51,6 +51,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
 
+
     val scaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
 
@@ -130,43 +131,8 @@ fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
                         )
                         val localContext = LocalContext.current
 
-                        Box(
-                            modifier = Modifier
-                                .align(alignment = Alignment.TopStart)
-                                .offset(
-                                    x = 219.dp,
-                                    y = 417.dp
-                                )
-                                .requiredWidth(width = 147.dp)
-                                .requiredHeight(height = 150.dp)
-                                .clip(shape = RoundedCornerShape(15.dp))
-                                .background(color = Color.White)
-                                .clickable {
-                                    localContext.startActivity(
-                                        Intent(localContext, DetailsPageActivity::class.java)
-                                    )
-                                }
-                        ) {
-
-                            Image(
-                                painter = painterResource(id = R.drawable.custardaapple),
-                                contentDescription = "",
-                                modifier = Modifier
-                                    .requiredWidth(width = 158.dp)
-                                    .requiredHeight(height = 140.dp)
-                                    .clip(shape = RoundedCornerShape(15.dp))
-                            )
-                        }
-
-
-
-
-
-
-
 
                     }
-
 
                     Text(
                         text = "Custard Apple",
@@ -207,6 +173,11 @@ fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
 
 
 
+
+
+
+//
+
                     Image(
                         painter = painterResource(id = R.drawable.banner),
                         contentDescription = "",
@@ -232,24 +203,260 @@ fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
 
 
 
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 219.dp,
+                                y = 417.dp
+                            )
+                            .requiredWidth(width = 147.dp)
+                            .requiredHeight(height = 150.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color.White)
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                    ) {
+
+                        Image(
+                            painter = painterResource(id = R.drawable.custardaapple),
+                            contentDescription = "",
+                            modifier = Modifier
+                                .requiredWidth(width = 158.dp)
+                                .requiredHeight(height = 140.dp)
+                                .clip(shape = RoundedCornerShape(15.dp))
+                        )
+                    }
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 410.dp
+                            )
+                            .requiredWidth(width = 150.dp)
+                            .requiredHeight(height = 100.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color(0xFFFFA500))
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                    ) {
+
+                        Image(
+                            painter = painterResource(id = R.drawable.custardaapple),
+                            contentDescription = "",
+                            modifier = Modifier
+                                .requiredWidth(width = 107.dp)
+                                .requiredHeight(height = 106.dp)
+                                .clip(shape = RoundedCornerShape(15.dp))
+                        )
+                    }
 
 
+                    Image(
+                        painter = painterResource(id = R.drawable.profile),
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(x = 1.dp, y = 26.dp)
+                            .requiredSize(size = 42.dp)
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(
+                                        localContext,
+                                        UserProfileActivity::class.java
+                                    )
+                                )
+                            }
+                            .clip(shape = CircleShape)
+                            .border(
+                                border = BorderStroke(0.10000000149011612.dp, Color(0xffbdbdbd)),
+                                shape = CircleShape
+                            ))
 
 
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 134.dp
+                            )
+                            .requiredWidth(width = 26.dp)
+                            .requiredHeight(height = 8.dp)
+                            .background(color = Color(0xFFFF5722).copy(alpha = 0.82f))
+                    )
 
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 13.dp,
+                                y = 181.dp
+                            )
+                            .requiredWidth(width = 146.dp)
+                            .requiredHeight(height = 209.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color(0xFFFFA500))
+                    ) {
 
+                        Text(
+                            text = "Mangoes",
+                            color = Color.Black,
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                fontWeight = FontWeight.Bold
+                            ),
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(
+                                    x = 60.dp,
+                                    y = 161.dp
+                                )
+                        )
+                    }
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 220.dp,
+                                y = 172.dp
+                            )
+                            .requiredWidth(width = 146.dp)
+                            .requiredHeight(height = 211.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color(0xFFFFA500))
+                    ) {
+                        Text(
+                            text = "Apples",
+                            color = Color.Black,
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                fontWeight = FontWeight.Bold
+                            ),
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(
+                                    x = 23.dp,
+                                    y = 168.dp
+                                )
+                                .requiredWidth(width = 95.dp)
+                                .requiredHeight(height = 28.dp)
+                        )
+                    }
+                    Image(
+                        painter = painterResource(id = R.drawable.mangoes),
+                        contentDescription = "",
 
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 176.dp
+                            )
+                            .requiredWidth(width = 157.dp)
+                            .requiredHeight(height = 156.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                    )
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 219.dp,
+                                y = 417.dp
+                            )
+                            .requiredWidth(width = 147.dp)
+                            .requiredHeight(height = 150.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color(0xFFFFA500))
+                    )
+                    {
+                        Text(
+                            text = "Grapes",
+                            color = Color.Black,
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                fontWeight = FontWeight.Bold
+                            ),
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(
+                                    x = 43.dp,
+                                    y = 118.dp
+                                )
+                                .requiredWidth(width = 115.dp)
+                                .requiredHeight(height = 68.dp)
+                        )
+
+                    }
+                    Image(
+                        painter = painterResource(id = R.drawable.grapes),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 201.dp,
+                                y = 377.dp
+                            )
+                            .requiredWidth(width = 150.dp)
+                            .requiredHeight(height = 150.dp)
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.prof),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 4.dp,
+                                y = 26.dp
+                            )
+                            .requiredSize(size = 42.dp)
+                            .clip(shape = CircleShape)
+                            .border(
+                                border = BorderStroke(0.10000000149011612.dp, Color(0xffbdbdbd)),
+                                shape = CircleShape
+                            )
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.apples),
+
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 216.dp,
+                                y = 172.dp
+                            )
+                            .requiredWidth(width = 150.dp)
+                            .requiredHeight(height = 157.dp)
+//                            .clip(shape = RoundedCornerShape(20.dp))
+                    )
+
+                    Image(
+                        painter = painterResource(id = R.drawable.custardaapple),
+                        contentDescription = " ",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 21.dp,
+                                y = 355.dp
+                            )
+                            .requiredWidth(width = 167.dp)
+                            .requiredHeight(height = 186.dp)
+//                                .clip(shape = RoundedCornerShape(10.dp))
+                    )
 
                 }
 
             }
         }
     }
-
-
-
-
-
 }
 
 @Preview
