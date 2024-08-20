@@ -51,6 +51,168 @@ import kotlinx.coroutines.launch
 @Composable
 fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
 
+    val scaffoldState = rememberScaffoldState()
+    val coroutineScope = rememberCoroutineScope()
+
+    homeViewModel.getUserData()
+
+    Scaffold(
+        scaffoldState = scaffoldState,
+        topBar = {
+            AppToolbar(toolbarTitle = stringResource(id = R.string.home),
+                logoutButtonClicked = {
+                    homeViewModel.logout()
+                },
+                navigationIconClicked = {
+                    coroutineScope.launch {
+                        scaffoldState.drawerState.open()
+                    }
+                }
+            )
+        },
+        drawerGesturesEnabled = scaffoldState.drawerState.isOpen,
+        drawerContent = {
+            NavigationDrawerHeader(homeViewModel.emailId.value)
+            NavigationDrawerBody(navigationDrawerItems = homeViewModel.navigationItemsList,
+                onNavigationItemClicked = {
+                    Log.d("ComingHere","inside_NavigationItemClicked")
+                    Log.d("ComingHere","${it.itemId} ${it.title}")
+                })
+        }
+
+    ) { paddingValues ->
+
+        Surface(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.White)
+                .padding(paddingValues)
+        ) {
+            Column(modifier = Modifier.fillMaxSize()) {
+                Box(
+                    modifier = Modifier
+                        .requiredWidth(width = 420.dp)
+                        .requiredHeight(height = 760.dp)
+                        .background(color = Color(0xFFFFA500))
+
+                ) {
+
+
+
+
+
+
+                    val localContext = LocalContext.current
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(
+                                x = 13.dp,
+                                y = 181.dp
+                            )
+                            .requiredWidth(width = 146.dp)
+                            .requiredHeight(height = 209.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color.White)
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                    ) {
+                        Image(
+                            painter = painterResource(id = R.drawable.arrow_left),
+                            contentDescription = "",
+                            modifier = Modifier
+                                .requiredWidth(width = 157.dp)
+                                .requiredHeight(height = 150.dp)
+                                .clip(shape = RoundedCornerShape(15.dp))
+                        )
+                        val localContext = LocalContext.current
+
+
+                    }
+
+                    Text(
+                        text = "Custard Apple",
+                        color = Color.Black,
+                        style = TextStyle(
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold
+                        ),
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(x = 62.dp, y = 539.dp)
+                    )
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(x = 220.dp, y = 172.dp)
+                            .requiredWidth(width = 146.dp)
+                            .requiredHeight(height = 211.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color.White)
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
+                    ) {
+
+                        Image(
+                            painter = painterResource(id = R.drawable.grapes),
+                            contentDescription = "",
+                            modifier = Modifier
+                                .requiredWidth(width = 157.dp)
+                                .requiredHeight(height = 156.dp)
+                                .clip(shape = RoundedCornerShape(15.dp))
+                        )
+
+                    }
+
+
+
+                    Image(
+                        painter = painterResource(id = R.drawable.banner),
+                        contentDescription = "",
+                        modifier = Modifier
+                            .requiredWidth(width = 470.dp) // Adjust width as needed
+                            .requiredHeight(height = 175.dp) // Adjust height as needed
+                            .clip(shape = RoundedCornerShape(15.dp)
+                            )
+                    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+            }
+        }
+    }
+
+
+
 
 
 }
