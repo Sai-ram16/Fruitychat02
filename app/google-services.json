@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518304793743",
+    "project_id": "fruitychat-45313",
+    "storage_bucket": "fruitychat-45313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518304793743:android:6e764dac045ed7c1939cfa",
+        "android_client_info": {
+          "package_name": "com.sairam.fruitychat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOLa4y0MUVeW70CKd2NnYNyTOvicTu9xY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
