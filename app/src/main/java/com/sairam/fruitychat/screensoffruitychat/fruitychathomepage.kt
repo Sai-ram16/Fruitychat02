@@ -130,8 +130,43 @@ fun HomeScreen(homeViewModel: Fruitychathviewmodel = viewModel()) {
                         )
                         val localContext = LocalContext.current
 
+                        Box(
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(
+                                    x = 219.dp,
+                                    y = 417.dp
+                                )
+                                .requiredWidth(width = 147.dp)
+                                .requiredHeight(height = 150.dp)
+                                .clip(shape = RoundedCornerShape(15.dp))
+                                .background(color = Color.White)
+                                .clickable {
+                                    localContext.startActivity(
+                                        Intent(localContext, DetailsPageActivity::class.java)
+                                    )
+                                }
+                        ) {
+
+                            Image(
+                                painter = painterResource(id = R.drawable.custardaapple),
+                                contentDescription = "",
+                                modifier = Modifier
+                                    .requiredWidth(width = 158.dp)
+                                    .requiredHeight(height = 140.dp)
+                                    .clip(shape = RoundedCornerShape(15.dp))
+                            )
+                        }
+
+
+
+
+
+
+
 
                     }
+
 
                     Text(
                         text = "Custard Apple",
