@@ -12,11 +12,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.sairam.fruitychat.R
 //import com.example.myproject.R
-import com.sairam.fruitychat.fruitchatcomponents.HeadingTextComponent
-import com.sairam.fruitychat.fruitchatcomponents.NormalTextComponent
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
-import com.sairam.fruitychat.Routeplanning.SystemBackButtonHandler
+import com.sairam.fruitychat.components.HeadingTextComponent
+import com.sairam.fruitychat.components.NormalTextComponent
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
+import com.sairam.fruitychat.navigations.SystemBackButtonHandler
 
 @Composable
 fun TermsAndConditionsScreen() {

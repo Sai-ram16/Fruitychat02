@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitchatdata
+package com.sairam.fruitychat.data
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

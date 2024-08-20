@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitchatdata.fruitychathome
+package com.sairam.fruitychat.data.fruitychathome
 
 import android.util.Log
 import androidx.compose.material.icons.Icons
@@ -8,9 +8,9 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.sairam.fruitychat.fruitchatdata.routeritem
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
+import com.sairam.fruitychat.data.routeritem
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
 
 class Fruitychathviewmodel : ViewModel() {
 

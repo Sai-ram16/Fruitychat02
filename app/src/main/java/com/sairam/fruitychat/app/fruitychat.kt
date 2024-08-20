@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitychatapp
+package com.sairam.fruitychat.app
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.fillMaxSize
@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.sairam.fruitychat.fruitchatdata.fruitychathome.Fruitychathviewmodel
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
+import com.sairam.fruitychat.data.fruitychathome.Fruitychathviewmodel
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
 import com.sairam.fruitychat.screensoffruitychat.HomeScreen
 import com.sairam.fruitychat.screensoffruitychat.Fruitychatregister
 import com.sairam.fruitychat.screensoffruitychat.TermsAndConditionsScreen

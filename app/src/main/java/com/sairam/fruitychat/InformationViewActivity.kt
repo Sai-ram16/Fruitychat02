@@ -30,7 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.sairam.fruitychat.ui.concept.FruitsAppTheme
+import com.sairam.fruitychat.ui.theme.FruitsAppTheme
 
 class DetailsPageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

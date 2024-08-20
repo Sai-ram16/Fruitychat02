@@ -1,13 +1,13 @@
-package com.sairam.fruitychat.fruitchatdata
+package com.sairam.fruitychat.data
 
 import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.sairam.fruitychat.fruitchatdata.fruitychatlogin.UIeventfruitychat
-import com.sairam.fruitychat.fruitchatdata.fruitychatvalidatorrules.Validator
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
+import com.sairam.fruitychat.data.fruitychatlogin.UIeventfruitychat
+import com.sairam.fruitychat.data.fruitychatvalidatorrules.Validator
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
 
 
 class viewmodell : ViewModel() {

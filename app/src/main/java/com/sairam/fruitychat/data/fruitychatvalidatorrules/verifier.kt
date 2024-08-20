@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitchatdata.fruitychatvalidatorrules
+package com.sairam.fruitychat.data.fruitychatvalidatorrules
 
 object Validator {
 

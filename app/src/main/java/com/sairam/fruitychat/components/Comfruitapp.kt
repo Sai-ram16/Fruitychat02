@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitchatcomponents
+package com.sairam.fruitychat.components
 
 import android.util.Log
 import androidx.compose.foundation.background
@@ -45,15 +45,15 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.sairam.fruitychat.fruitchatdata.routeritem
-import com.sairam.fruitychat.ui.concept.AccentColor
-import com.sairam.fruitychat.ui.concept.BgColor
-import com.sairam.fruitychat.ui.concept.GrayColor
-import com.sairam.fruitychat.ui.concept.Primary
-import com.sairam.fruitychat.ui.concept.Secondary
-import com.sairam.fruitychat.ui.concept.TextColor
-import com.sairam.fruitychat.ui.concept.WhiteColor
-import com.sairam.fruitychat.ui.concept.componentShapes
+import com.sairam.fruitychat.data.routeritem
+import com.sairam.fruitychat.ui.theme.AccentColor
+import com.sairam.fruitychat.ui.theme.BgColor
+import com.sairam.fruitychat.ui.theme.GrayColor
+import com.sairam.fruitychat.ui.theme.Primary
+import com.sairam.fruitychat.ui.theme.Secondary
+import com.sairam.fruitychat.ui.theme.TextColor
+import com.sairam.fruitychat.ui.theme.WhiteColor
+import com.sairam.fruitychat.ui.theme.componentShapes
 import com.sairam.fruitychat.R
 
 

@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.ui.concept
+package com.sairam.fruitychat.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

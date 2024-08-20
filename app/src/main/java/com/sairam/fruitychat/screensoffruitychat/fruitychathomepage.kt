@@ -41,11 +41,11 @@ import com.sairam.fruitychat.DetailsPageActivity
 
 //import com.example.project.R
 import com.sairam.fruitychat.UserProfileActivity
-import com.sairam.fruitychat.fruitchatcomponents.AppToolbar
-import com.sairam.fruitychat.fruitchatcomponents.NavigationDrawerBody
-import com.sairam.fruitychat.fruitchatcomponents.NavigationDrawerHeader
+import com.sairam.fruitychat.components.AppToolbar
+import com.sairam.fruitychat.components.NavigationDrawerBody
+import com.sairam.fruitychat.components.NavigationDrawerHeader
 
-import com.sairam.fruitychat.fruitchatdata.fruitychathome.Fruitychathviewmodel
+import com.sairam.fruitychat.data.fruitychathome.Fruitychathviewmodel
 import kotlinx.coroutines.launch
 
 @Composable

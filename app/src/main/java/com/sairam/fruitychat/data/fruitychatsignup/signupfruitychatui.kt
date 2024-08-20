@@ -1,4 +1,4 @@
-package  com.sairam.fruitychat.fruitchatdata.fruitychatsignup
+package  com.sairam.fruitychat.data.fruitychatsignup
 
 sealed class signupfruitychatui{
 

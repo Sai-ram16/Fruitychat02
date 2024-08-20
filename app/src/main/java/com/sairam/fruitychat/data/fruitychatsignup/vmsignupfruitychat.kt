@@ -1,12 +1,12 @@
-package com.sairam.fruitychat.fruitchatdata.fruitychatsignup
+package com.sairam.fruitychat.data.fruitychatsignup
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.sairam.fruitychat.fruitchatdata.Uisignupstate
-import com.sairam.fruitychat.fruitchatdata.fruitychatvalidatorrules.Validator
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
+import com.sairam.fruitychat.data.Uisignupstate
+import com.sairam.fruitychat.data.fruitychatvalidatorrules.Validator
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
 
 
 class vmsignupfruitychat : ViewModel() {

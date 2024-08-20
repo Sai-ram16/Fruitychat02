@@ -1,4 +1,4 @@
-package  com.sairam.fruitychat.fruitchatdata
+package  com.sairam.fruitychat.data
 
 data class Uisignupstate(
     var firstName :String = "",

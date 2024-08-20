@@ -45,12 +45,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.sairam.fruitychat.screensoffruitychat.HomeScreenPreview
-import com.sairam.fruitychat.ui.concept.FruitsAppTheme
+import com.sairam.fruitychat.ui.theme.FruitsAppTheme
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

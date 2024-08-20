@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.ui.concept
+package com.sairam.fruitychat.ui.theme
 
 import android.app.Activity
 import android.os.Build

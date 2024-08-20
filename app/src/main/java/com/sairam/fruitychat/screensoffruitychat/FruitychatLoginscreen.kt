@@ -15,17 +15,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.sairam.fruitychat.R
-import com.sairam.fruitychat.fruitchatcomponents.ButtonComponent
-import com.sairam.fruitychat.fruitchatcomponents.ClickableLoginTextComponent
-import com.sairam.fruitychat.fruitchatcomponents.DividerTextComponent
-import com.sairam.fruitychat.fruitchatcomponents.HeadingTextComponent
-import com.sairam.fruitychat.fruitchatcomponents.MyTextFieldComponent
-import com.sairam.fruitychat.fruitchatcomponents.PasswordTextFieldComponent
-import com.sairam.fruitychat.fruitchatdata.viewmodell
-import com.sairam.fruitychat.fruitchatdata.fruitychatlogin.UIeventfruitychat
-import com.sairam.fruitychat.Routeplanning.AppRouter
-import com.sairam.fruitychat.Routeplanning.Screen
-import com.sairam.fruitychat.Routeplanning.SystemBackButtonHandler
+import com.sairam.fruitychat.components.ButtonComponent
+import com.sairam.fruitychat.components.ClickableLoginTextComponent
+import com.sairam.fruitychat.components.DividerTextComponent
+import com.sairam.fruitychat.components.HeadingTextComponent
+import com.sairam.fruitychat.components.MyTextFieldComponent
+import com.sairam.fruitychat.components.PasswordTextFieldComponent
+import com.sairam.fruitychat.data.viewmodell
+import com.sairam.fruitychat.data.fruitychatlogin.UIeventfruitychat
+import com.sairam.fruitychat.navigations.AppRouter
+import com.sairam.fruitychat.navigations.Screen
+import com.sairam.fruitychat.navigations.SystemBackButtonHandler
 
 
 @Composable

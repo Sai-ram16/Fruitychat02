@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.fruitchatdata.fruitychatlogin
+package com.sairam.fruitychat.data.fruitychatlogin
 
 sealed class UIeventfruitychat{
 

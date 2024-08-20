@@ -1,4 +1,4 @@
-package com.sairam.fruitychat.Routeplanning
+package com.sairam.fruitychat.navigations
 
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
